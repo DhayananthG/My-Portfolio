@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Incorporation  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Incorporation  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" href="assets/Images/favicon-image.png">
+
+    <title>Portfolio | Dhayananth</title>
+</head>
+<body data-spy="scroll">
+    <div class="container-fluid">
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light top-fixed" id="NavBar">
+            <a href="/" class="navbar-brand"><h3><strong>Portfolio</strong></h3></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Alert -->
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <h5>Welcome to My <strong>Responsive Porfolio Website</strong></h5> 
+            <p class="text-muted">Constructed with HTML,CSS and Bootstrap</p>
+            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">&times;</button>
+        </div>
+
+        <!-- Home -->
+        <section id="Home">
+                <div class="homeText text-center">
+                    <span><h1>G S Dhayananth</h1></span>
+                    <h5>Front-End Developer  |  Cyber Security  |  Machine Learning</h5>
+                    <!-- <a href="mailto:iamdhayaoffl@gmail.com">Mail</a>
+                    <a href="tel:+919345509528">Contact Number</a>
+                    <a href="https://www.linkedin.com/in/dhayananthgs">LinkedIn</a>
+                    <a href="https://github.com/DhayananthG">Github</a>
+                    <a href="https://www.hackerrank.com/profile/iamdhayaoffl">HackerRank</a><br> -->
+                    <a class="btn btn-success home-link m-3" href="assets/Dhayananth - Resume.pdf">Get Resume</a>
+                    <a class="btn btn-success home-link m-3" href="mailto:iamdhayaoffl@gmail.com">Hire me</a>
+                </div>
+        </section>
+
+        <!-- About -->
+        <section id="About">
+            <div class="row">
+                <div class="about-container">
+                    <div class="card">
+                        <img src="assets/Images/Sastra image.jpg" class="card-img-top" alt="SASTRA Deemed to be University">
+                        <div class="card-body">
+                          <p class="card-text"><strong>B.Tech CSE</strong><br>Purshuing B.Tech Computer Science and Engineering in SASTRA Deemed University </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-container">
+                    <div class="card">
+                        <img src="assets/Images/THSS image.jpg" class="card-img-top" alt="SASTRA Deemed to be University">
+                        <div class="card-body">
+                          <p class="card-text"><strong>HSE and SSLC</strong><br>Completed my Higher Secondary in Town Higher Secondary School,Kumbakonam with 85%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project -->
+        <section id="Project">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card m-5">
+                        <div>
+                            <h2 class="card-header">Homophobic and Transphobic Detection</h2>
+                            <p class="card-body">This project focuses on Detecting and Classifying Homophobic and Transphobic Comments using Artificial Neural Networks(ANN) with five layers trained and tested by the Static Dataset. It Enhances the Social Media Safety and foster more positive online Environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card m-5">
+                        <div>
+                            <h2 class="card-header">Responsive Portfolio Website</h2>
+                            <p class="card-body">I Designed and Developed this Responsive Portfolio Website using HTML,CSS and Bootstrap from Scratch. It Provides the Detailed Informaton about myself in a Structured and Accessible Format and the Usage of Bootstrap ensures Compatibility across different Devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card m-5">
+                        <div>
+                            <h2 class="card-header">Film Festivals Announcements</h2>
+                            <p class="card-body">A Dynamic Website which can be used to Register for the Competition and Check for the Results.Also, It Contains Database to Store the Registration Data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="Contact">
+            <div class="row">
+                <div>
+                    <img src="assets/Images/contact.webp" class="contact-img">
+                </div>
+                <div class="icon-container">
+                    <img src="assets/Images/email.png" alt="email" class="icon"><a href="mailto:iamdhayaoffl@gmail.com">Send Mail</a></img>
+                    <br>
+
+                    <img src="assets/Images/phone.jpg" alt="phone" class="icon"><a href="tel:+919345509528">Contact Number</a></img>
+                    <br>
+
+                    <img src="assets/Images/linkedin.png" alt="LinkedIn" class="icon"><a href="https://www.linkedin.com/in/dhayananthgs">LinkedIn</a></img>
+                    <br>
+
+                    <img src="assets/Images/github.png" alt="Github" class="icon"><a href="https://github.com/DhayananthG">Github</a></img>
+                    <br>
+
+                    <img src="assets/Images/experience.png" alt="HackerRank" class="icon"><a href="https://www.hackerrank.com/profile/iamdhayaoffl">HackerRank</a></img>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Importing all the Necessary Files -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
