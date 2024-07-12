@@ -141,7 +141,7 @@ section{
 }
 
 
- @media screen and (max-width:400px){
+ @media screen and (max-width:600px){
 
     .navbar h3, .navbar li{
         font-size: 20px;
@@ -201,7 +201,6 @@ section{
         flex-direction: row;
         align-content: center;
         margin-top: 20px;
-        margin-left: 30px;
     }
 
     .contact-img{
