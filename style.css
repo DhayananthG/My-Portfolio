@@ -3,10 +3,11 @@ body{
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
 }
 
 .nav-link{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     border: 2px solid transparent;
 }
@@ -14,8 +15,7 @@ body{
 .nav-link:hover{
     border-bottom: 3px solid blue;
     transition: .1s;
-    color: black;
-    font-weight: bold;
+    color: black;   
 }
 
 #NavBar{
@@ -24,13 +24,12 @@ body{
     background-color: white;
     top: 0;
     z-index: 10;
+    font-family: "Roboto", sans-serif;
 }
 
 section{
     min-height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100;
 }
 
 /* Home */
@@ -43,12 +42,15 @@ section{
 
 .homeText h1{
     font-size: 80px;
+    letter-spacing: 3px;
     margin: 15px;
+    font-family: "Poppins", sans-serif;
 }
 
 .homeText h5{
     font-size: 30px;
     margin: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 .homeText button{
@@ -60,13 +62,15 @@ section{
 .homeText{
     width: 100%;
     height: 100vh;
-    margin-top: 110px;
+    margin-top: 120px;
 }
 
 .homeText a{
     width: 140px;
     height: 42px;
+    border-radius: 20px;
     font-size: 18px;
+    font-family: "Roboto", sans-serif;
 }
 
 /* About */
@@ -82,6 +86,12 @@ section{
     width: 350px;
     height: 350px;
     margin: 30px;
+    transition: transform 1s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    border: 3px solid black;
 }
 
 .card-img-top{
@@ -89,6 +99,9 @@ section{
     height: 200px;
 }
 
+.card-text p{
+    font-family: "Roboto", sans-serif;
+}
 
 /* Project */
 #Project{
@@ -114,6 +127,7 @@ section{
     width: 500px;
     height: 500px;
     margin: 30px;
+    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); */
 }
 
 .icon-container{
@@ -140,8 +154,17 @@ section{
     transition: .1s;
 }
 
+@media screen and (max-width:985px){
+    .nav-link:hover{
+        border-bottom: none;
+        transition: none;
+        color: black;
+        font-weight: bold;
+    }
+}
 
- @media screen and (max-width:600px){
+
+ @media screen and (max-width:400px){
 
     .navbar h3, .navbar li{
         font-size: 20px;
@@ -166,7 +189,8 @@ section{
     .homeText a{
         width: 100px;
         height: 32px;
-        font-size: 12px;
+        font-size: 13px;
+        border-radius: 15px;
         margin: 5px;
     }
 
@@ -177,7 +201,6 @@ section{
     .card{
         width: 290px;
         height: 350px;
-        margin: 10px;
     }
     
     .card-img-top{
@@ -189,7 +212,7 @@ section{
         display: flex;
         flex-direction: row;
         align-content: center;
-        margin-top: 20px;
+        margin: 30px 55px;
     }
 
     #Project h2{
@@ -200,8 +223,9 @@ section{
         display: flex;
         flex-direction: row;
         align-content: center;
-        margin-top: 20px;
+        margin: 30px 55px;
     }
+
 
     .contact-img{
         width: 280px;
