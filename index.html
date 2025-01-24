@@ -8,7 +8,83 @@
     <link href="./style.css" rel="stylesheet"/>
 </head>
 <body>
-    
+    <section id="home">
+        <div class="h-screen w-full bg-cover bg-center fade home-bg" >
+            <!-- Navbar -->
+            <nav id="navbar" class="fixed top-0 left-0 z-10 w-full py-2 text-white">
+                <div class="px-12 py-4 mx-auto max-w-6xl sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between">
+                        <p class="px-3 font-bold transition rounded-md text-lg hover-shadow">PORTFOLIO</p>
+                        <!-- Mobile menu button -->
+                        <div class="md:hidden">
+                            <button id="sidebarOpen" class="focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Links for Desktop -->
+                        <div class="items-center hidden md:flex md:space-x-8 playfair-display">
+                            <a href="#home" class="px-3 font-bold transition rounded-md text-lg hover-shadow">HOME</a>
+                            <a href="#about" class="px-3 font-bold transition rounded-md text-lg hover-shadow">ABOUT ME</a>
+                            <a href="#projects" class="px-3 font-bold transition rounded-md text-lg hover-shadow">PROJECTS</a>
+                            <a href="#contact" class="px-3 font-bold transition rounded-md text-lg hover-shadow">CONTACT</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="flex flex-col lg:flex-row items-center justify-between min-h-screen">
+                <!-- Left Text Content -->
+                <div class="flex flex-col items-center lg:items-start justify-center min-h-screen lg:pl-40">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-full text-left">
+                        <p class="mt-4 font-semibold base-txt text-2xl md:text-4xl lg:text-5xl">
+                            Hello! I'm 
+                        </p>
+                        <p class="mt-4 font-semibold text-3xl md:text-5xl lg:text-7xl gradient-text">
+                            G S Dhayananth
+                        </p>
+                        <div>
+                            <a href="#contact">
+                                <button class="btn w-30 p-3 mt-5">Contact Me</button>
+                            </a>
+                            <a href="./assets/Resume-2.pdf">
+                                <button class="btn p-3 mt-5 ml-2 w-30">Resume</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Side Image -->
+                <div class="hidden lg:flex items-center justify-center lg:justify-end min-h-screen lg:pr-40">
+                    <img src="./assets/my-avatar.png" alt="My Avatar" class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain">
+                </div>
+            </div>
+                
+            <!-- Sidebar for Mobile -->
+            <div id="sidebar" class="fixed inset-0 z-50 w-64 text-white transition-transform duration-300 ease-in-out transform -translate-x-full bg-black md:hidden">
+                <div class="flex items-center justify-between px-4 py-4 border-b border-gray-700">
+                    <h2 class="text-lg font-bold hover-shadow">Menu</h2>
+                    <button id="sidebarClose" class=" focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                    <div class="p-4 space-y-6">
+                        <a href="#home" class="block font-semibold hover-shadow">HOME</a>
+                        <a href="#about" class="block font-semibold hover-shadow">ABOUT ME</a>
+                        <a href="#projects" class="block font-semibold hover-shadow">PROJECTS</a>
+                        <a href="#contact" class="block font-semibold hover-shadow">CONTACT</a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+
+
     <script src="./script.js"></script>
 </body>
 </html>
