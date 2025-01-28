@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhayananth - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
     <link href="./style.css" rel="stylesheet"/>
 </head>
 <body>
+    <!-- HOME  -->
     <section id="home">
         <div class="h-screen w-full bg-cover bg-center fade home-bg" >
             <!-- Navbar -->
@@ -26,7 +28,7 @@
                         <!-- Links for Desktop -->
                         <div class="items-center hidden md:flex md:space-x-8 playfair-display">
                             <a href="#home" class="px-3 font-bold transition rounded-md text-lg hover-shadow">HOME</a>
-                            <a href="#about" class="px-3 font-bold transition rounded-md text-lg hover-shadow">ABOUT ME</a>
+                            <a href="#about" class="px-3 font-bold transition rounded-md text-lg hover-shadow">ABOUT</a>
                             <a href="#projects" class="px-3 font-bold transition rounded-md text-lg hover-shadow">PROJECTS</a>
                             <a href="#contact" class="px-3 font-bold transition rounded-md text-lg hover-shadow">CONTACT</a>
                         </div>
@@ -68,7 +70,7 @@
                 </div>
                     <div class="p-4 space-y-6">
                         <a href="#home" class="block font-semibold hover-shadow">HOME</a>
-                        <a href="#about" class="block font-semibold hover-shadow">ABOUT ME</a>
+                        <a href="#about" class="block font-semibold hover-shadow">ABOUT</a>
                         <a href="#projects" class="block font-semibold hover-shadow">PROJECTS</a>
                         <a href="#contact" class="block font-semibold hover-shadow">CONTACT</a>
                     </div>
@@ -79,8 +81,82 @@
 
 
 
+    <!-- ABOUT  -->
+    <section id="about" class="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 md:px-16 bg-black">
+        <div class="w-full md:w-1/2 flex justify-center">
+            <img src="./assets/about-img.jpg" alt="Your Image" class="w-80 md:w-96 rounded-lg shadow-lg">
+        </div>
+        
+        <div class="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+            <h2 class="text-3xl font-extrabold gradient-text">About Me</h2>
+            <p class="mt-4 text-xl base-txt">
+                I am G S Dhayananth, a passionate web developer and designer. I specialize in creating modern, responsive, and visually appealing websites using the latest technologies. With expertise in the MERN stack and a deep interest in cloud computing and deep learning, I love solving complex problems and building innovative solutions.
+            </p>
+            <a href="#contact" class="mt-6 inline-block px-6 py-3 btn">Contact Me</a>
+        </div>
+    </section>
+    
+    
 
+    <section id="contact" class="flex justify-center items-center min-h-screen bg-black text-white px-4">
+        <div class="bg-gray-900 p-8 rounded-lg shadow-lg max-w-md w-full">
+            <h2 class="text-3xl font-bold text-blue-400 text-center mb-4">Contact Me</h2>
+            <p class="text-gray-300 text-center mb-6">Let's connect! Fill out the form and I'll get back to you.</p>
+    
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label class="block text-md font-medium" for="name">Name</label>
+                    <input id="name"
+                           class="mt-1 w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           type="text"
+                           name="name"
+                           placeholder="Enter your name"
+                           required/>
+                </div>
+    
+                <div class="mb-4">
+                    <label class="block text-md font-medium" for="phone">Phone Number</label>
+                    <input id="phone"
+                           class="mt-1 w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           type="tel"
+                           name="phone"
+                           placeholder="+91 9876543210"
+                           required/>
+                </div>
+    
+                <div class="mb-4">
+                    <label class="block text-md font-medium" for="email">Email</label>
+                    <input id="email"
+                           class="mt-1 w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           type="email"
+                           name="email"
+                           placeholder="yourmail@example.com"
+                           required/>
+                </div>
+    
+                <div class="mb-4">
+                    <label class="block text-md font-medium" for="message">Message</label>
+                    <textarea id="message"
+                              class="mt-1 w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                              name="message"
+                              rows="4"
+                              placeholder="Write your message..."
+                              required></textarea>
+                </div>
+    
+                <div class="text-center">
+                    <button type="submit"
+                            class="w-full py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg transition duration-300">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 
+    
+    
+    
     <script src="./script.js"></script>
 </body>
 </html>
