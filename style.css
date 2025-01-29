@@ -1,8 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.lora-heading {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .base-txt{
-    /* color: #FFF8E1; */
-    /* color: #FF4500; red*/
-    /* color: #FF5722; Orange  */
-    /* color: #FFC107; yellow  */
     color: #D3D3D3;
 }
 
