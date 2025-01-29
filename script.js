@@ -34,3 +34,12 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('bg-black');
     }
 });
+
+
+window.addEventListener("load", function() {
+    let loader = document.querySelector(".code-loader");
+    loader.classList.add("hidden");
+    setTimeout(() => {
+        loader.style.display = "none"; 
+    }, 800); // 500ms for the fade effect
+});

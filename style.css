@@ -71,3 +71,107 @@
     transform: translateY(-5px);
 }
 
+.form-field{
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.form-field:focus{
+    border: 2px solid #D3D3D3;
+}
+
+
+
+/* LOADER  */
+/* From Uiverse.io by Pradeepsaranbishnoi */ 
+.code-loader {
+    color: #fff;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 100px;
+    opacity: 0.8;
+  }
+  
+  .code-loader span {
+    display: inline-block;
+    animation: pulse_414 0.4s alternate infinite ease-in-out;
+  }
+  
+  .code-loader span:nth-child(odd) {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes pulse_414 {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+
+/* Twitter,Linkedin Hover Animation */ 
+.social-links,.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+  }
+  
+  .social-btn svg {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  .social-btn:hover {
+    width: 170px;
+    border-radius: 5px;
+  }
+  
+  .social-btn:hover span {
+    padding: 2px;
+    width: 120px;
+  }
+  
+  #twitter svg {
+    fill: #1da1f2;
+  }
+  
+  #linkedin svg {
+    fill: #0e76a8;
+  }
+  
+  #github {
+    fill: #333;
+  }
+  
