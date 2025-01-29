@@ -12,6 +12,12 @@
     background-position: center; /* Centers the image horizontally and vertically */
 }
 
+@media screen and (max-width: 500px) {
+  .home-bg {
+      background: black;
+  }
+}
+
 
 .gradient-text {
     background: linear-gradient(90deg, #36d1dc, #5b86e5);
@@ -84,38 +90,38 @@
 
 
 /* LOADER  */
-/* From Uiverse.io by Pradeepsaranbishnoi */ 
 .code-loader {
-    color: #fff;
-    font-family: Consolas, Menlo, Monaco, monospace;
-    font-weight: bold;
-    font-size: 100px;
-    opacity: 0.8;
-  }
-  
-  .code-loader span {
-    display: inline-block;
-    animation: pulse_414 0.4s alternate infinite ease-in-out;
-  }
-  
-  .code-loader span:nth-child(odd) {
-    animation-delay: 0.5s;
-  }
-  
-  @keyframes pulse_414 {
-    0% {
+  color: #fff;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 100px;
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Smooth transition */
+}
+
+.code-loader span {
+  display: inline-block;
+  animation: pulse_414 0.4s alternate infinite ease-in-out;
+}
+
+.code-loader span:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse_414 {
+  0% {
       transform: scale(1);
       opacity: 1;
-    }
-    100% {
+  }
+  100% {
       transform: scale(1.2);
       opacity: 0.8;
-    }
   }
+}
 
-  .hidden {
-    display: none;
-  }
+.fade-out {
+  opacity: 0;
+}
 
 
 
@@ -174,4 +180,3 @@
   #github {
     fill: #333;
   }
-  
