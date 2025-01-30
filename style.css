@@ -8,24 +8,6 @@ html {
   font-style: normal;
 }
 
-.poppins-medium {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 
 .lora-heading {
   font-family: "Lora", serif;
@@ -50,13 +32,11 @@ html {
   }
 }
 
-
 .gradient-text {
-    background: linear-gradient(90deg, #36d1dc, #5b86e5);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
+    text-transform: uppercase;
+    color: hsl(0, 4%, 95%);
+    text-shadow: 1px 1px 0 #969090, 3px 3px 0 #605d5d, 4px 4px 0 #31abe3;
+  }
 
 
 .btn {
@@ -69,6 +49,9 @@ html {
     padding: 8px 16px; 
     position: relative; 
     overflow: hidden; 
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Hover Effect: Gradient background and text color change */
@@ -104,6 +87,9 @@ html {
     color: transparent;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     transition: transform 0.4s ease;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .hover-shadow:hover {
     transform: translateY(-5px);

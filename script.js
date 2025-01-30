@@ -47,8 +47,8 @@ window.addEventListener("load", function() {
 });
 
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbw8lrd_i81uKeBMbVoxAbMjY8J1U1atCgIwOcO4TeJICcLA8ylzb5gCj_sXseAK2Tkrqg/exec";
-const form = document.forms["submit-to-google-sheet"];
+const scriptURL = "https://script.google.com/macros/s/AKfycbx4idgdqZbwqtZqy_iOBl95xQt9cWrUl6ii90S0TQeVYKWBZ-0pudvgkPsKEBhExC7-Jg/exec";
+const form = document.forms["contact-form"];
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     var formData = new FormData(form);
