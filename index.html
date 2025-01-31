@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhayananth - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="./assets/favicon.png"/>
     <link href="./style.css" rel="stylesheet"/>
+
+    <!-- Essential CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- From Uiverse.io by Pradeepsaranbishnoi --> 
-    <div class="code-loader">
-        <span>{</span><span>}</span>
-    </div>
-    
-    
     <!-- HOME  -->
     <section id="home">
         <div class="h-screen w-full bg-cover bg-center fade home-bg" >
@@ -79,14 +79,14 @@
                     </button>
                 </div>
                     <div class="pl-6 space-y-5">
-                        <a href="#home" class="block text-xl font-semibold hover-shadow pt-5">HOME</a>
-                        <a href="#about" class="block text-xl font-semibold hover-shadow">ABOUT</a>
-                        <a href="#projects" class="block text-xl font-semibold hover-shadow">PROJECTS</a>
-                        <a href="#skills" class="block text-xl font-semibold hover-shadow">SKILLS</a>
-                        <a href="#contact" class="block text-xl font-semibold hover-shadow">CONTACT</a>
+                        <a href="#home" class="block text-xl hover-shadow pt-5">HOME</a>
+                        <a href="#about" class="block text-xl hover-shadow">ABOUT</a>
+                        <a href="#projects" class="block text-xl hover-shadow">PROJECTS</a>
+                        <a href="#skills" class="block text-xl hover-shadow">SKILLS</a>
+                        <a href="#contact" class="block text-xl hover-shadow">CONTACT</a>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </section>
 
@@ -235,7 +235,7 @@
                     </svg>
                     <span class="absolute inset-0 flex items-center justify-center text-2xl font-bold">90%</span>
                 </div>
-                <p class="text-xl font-semibold mt-4 px-5 lg:px-1">MERN Stack</p>
+                <p class="text-xl font-semibold mt-4 px-5 lg:px-1 text-center">MERN Stack</p>
             </div>
     
             <!-- React & Tailwind -->
@@ -313,24 +313,18 @@
             <div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
                 <!-- Form Section -->
                 <div class="w-full lg:w-1/2 p-6 rounded-lg shadow-lg">
-                    <form action="" method="POST" name="conatct-form">
+                    <form action="" method="POST" name="contact-form">
                         <div class="mb-5">
                             <label class="block text-lg font-medium mb-2" for="name">Name</label>
-                            <input id="name" type="text" name="name" placeholder="Enter your name"
-                                   class="w-full lg:w-3/4 px-4 py-3 form-field"
-                                   required />
+                            <input id="name" type="text" name="name" placeholder="Enter your name" class="w-full lg:w-3/4 px-4 py-3 form-field" required />
                         </div>  
                         <div class="mb-5">
                             <label class="block text-lg font-medium mb-2" for="email">Email</label>
-                            <input id="email" type="email" name="email" placeholder="yourmail@example.com"
-                                   class="w-full lg:w-3/4 px-4 py-3 form-field"
-                                   required />
+                            <input id="email" type="email" name="email" placeholder="yourmail@example.com" class="w-full lg:w-3/4 px-4 py-3 form-field" required />
                         </div>   
                         <div class="mb-5">
                             <label class="block text-lg font-medium mb-2" for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Write your message..."
-                                      class="w-full lg:w-3/4 px-4 py-3 form-field resize-none" required>
-                            </textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Write your message..." class="w-full lg:w-3/4 px-4 py-3 form-field resize-none" required></textarea>
                         </div>
                         <div>
                             <button type="submit" id="submit" class="w-full lg:w-3/4 px-4 py-3 btn">
@@ -338,6 +332,7 @@
                             </button>
                         </div>
                     </form>
+                    <div id="msgg" class="py-5 text-md"></div>                                        
                 </div>
     
                 <!-- Contact Info Section -->

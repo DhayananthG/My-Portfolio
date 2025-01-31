@@ -105,44 +105,6 @@ html {
     border: 2px solid #D3D3D3;
 }
 
-
-
-/* LOADER  */
-.code-loader {
-  color: #fff;
-  font-family: Consolas, Menlo, Monaco, monospace;
-  font-weight: bold;
-  font-size: 100px;
-  opacity: 1;
-  transition: opacity 0.5s ease-out; /* Smooth transition */
-}
-
-.code-loader span {
-  display: inline-block;
-  animation: pulse_414 0.4s alternate infinite ease-in-out;
-}
-
-.code-loader span:nth-child(odd) {
-  animation-delay: 0.5s;
-}
-
-@keyframes pulse_414 {
-  0% {
-      transform: scale(1);
-      opacity: 1;
-  }
-  100% {
-      transform: scale(1.2);
-      opacity: 0.8;
-  }
-}
-
-.fade-out {
-  opacity: 0;
-}
-
-
-
 /* Twitter,Linkedin Hover Animation */ 
 .social-links,.flex-center {
     display: flex;

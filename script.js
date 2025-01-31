@@ -35,47 +35,46 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
-window.addEventListener("load", function() {
-    let loader = document.querySelector(".code-loader");
-
-    loader.classList.add("fade-out");
-
-    setTimeout(() => {
-        loader.style.display = "none";
-    }, 500); 
-});
-
-
-const scriptURL = "https://script.google.com/macros/s/AKfycbx4idgdqZbwqtZqy_iOBl95xQt9cWrUl6ii90S0TQeVYKWBZ-0pudvgkPsKEBhExC7-Jg/exec";
+// Contact Form Data Saving 
+const scriptURL = "https://script.google.com/macros/s/AKfycbyHN4qqAERDICAW64zOszQUSjaP1NJ0JOAU_nO4PeJIVH8EpqhE2dh-z_fRLeAznVdpaw/exec";
 const form = document.forms["contact-form"];
+const submitButton = document.getElementById("submit");
+const msgElement = document.getElementById("msgg");
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    // Disable the submit button and show loading spinner
+    submitButton.disabled = true;
+    msgElement.innerHTML = "Submitting... Please Wait";
+    msgElement.style.color = "#D3D3D3";
+
     var formData = new FormData(form);
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
 
-    // Append values to the formData
-    formData.append("Name", name);
-    formData.append("Email", email);
-    formData.append("Message", message);
-    console.log('FormData:', formData);
-
-    fetch(scriptURL, { method: "POST", body: formData })
-        .then((response) => {
-            formData.forEach((value, key) => {
-                console.log(key + ": " + value);
-            });
-            msgg.innerHTML = "Message Sent Successfully";
+    fetch(scriptURL, {
+        method: "POST",
+        body: formData,
+    })
+    .then(response => response.json()) 
+    .then(data => {
+        if (data.result === 'success') {
+            msgElement.innerHTML = "Message Sent Successfully";
+            msgElement.style.color = "green";
             form.reset();
-            setTimeout(function () {
-                msgg.innerHTML = "";
-            }, 4000);
-        })
-        .catch((error) => {
-            msgg.innerHTML = "Error Occurred";
-        });
+        } else {
+            msgElement.innerHTML = "Error Occurred: " + data.error;
+            msgElement.style.color = "red";
+        }
+
+        setTimeout(() => {
+            submitButton.disabled = false;
+        }, 2000);
+
+        setTimeout(() => { msgElement.innerHTML = ""; }, 8000);
+    })
+    .catch(error => {
+        msgElement.innerHTML = "Error Occurred";
+        msgElement.style.color = "red";
+        submitButton.disabled = false;
+    });
 });
-
-
